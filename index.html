@@ -22,16 +22,32 @@
   </header>
 
   <section class="hero">
-    <img src="professional.jpeg" alt="Nanda Varun" class="profile-pic">
+    <!-- Use a wrapper to control the crop and headroom -->
+    <div class="profile-container">
+      <img src="professional.jpeg" alt="Nanda Varun" class="profile-pic">
+    </div>
+
     <h1>Hi, I'm <span>Nanda Varun</span></h1>
-    <p class="tagline">Computer Science undergraduate focused on Python, Machine Learning, and Cybersecurity, building secure, AI-driven applications and cloud‑ready solutions.</p>
+    <p class="tagline">Computer Science undergraduate focused on Python, Machine Learning, and Cybersecurity, building secure, AI-driven applications and cloud-ready solutions.</p>
     <a class="btn" href="#projects">View My Work</a>
   </section>
 
   <section id="about">
     <h2 style="color: #FFD700;">About</h2>
-    <p>
-      Computer Science undergraduate experienced in AI-driven apps like face recognition voting, salary prediction, and malware detection, with skills across data preprocessing, NLP, cloud computing, and model deployment.
+    <p style="max-width:900px; margin: 0.6rem auto 0;">
+      I am a Computer Science undergraduate with a strong focus on applied Machine Learning, Computer Vision, and practical Cybersecurity. Over the past few years I’ve built end-to-end projects that solve real-world problems — from a contactless face-recognition voting system (complete with Aadhaar-based registration and duplicate-vote prevention) to a secure AES + LSB steganography tool with a user-friendly GUI. My work emphasizes robust, testable pipelines: clean data preprocessing, reproducible model training, careful evaluation (ROC-AUC, recall-focused metrics for imbalanced data), and production-aware deployment using lightweight interfaces like Streamlit and Tkinter.
+    </p>
+
+    <p style="max-width:900px; margin: 0.6rem auto 0;">
+      Technically, I’m most comfortable with Python (Pandas, NumPy), scikit-learn, OpenCV, and NLP basics. I also use Git for version control and routinely prototype interfaces with Streamlit and Tkinter. On the security side, I’ve explored static analysis techniques for offline malware detection and studied threat modeling and defensive principles during hands-on internships.
+    </p>
+
+    <p style="max-width:900px; margin: 0.6rem auto 0  ;">
+      Recent highlights include an AI internship working on ANPR and traffic-counting pipelines, and a cybersecurity internship that strengthened my understanding of network defense and incident response. I enjoy end-to-end engineering: turning a research idea into working code, validating it with real data, and packaging it so others can run it easily.
+    </p>
+
+    <p style="max-width:900px; margin: 0.6rem auto 0  ;">
+      I’m actively looking for opportunities to contribute to applied AI or security-focused engineering teams where I can bring practical ML skills, strong problem-solving, and a focus on reliability. Feel free to check my projects below or reach out on <a href="https://github.com/nanda3333" target="_blank" style="color:#00FFFF;">GitHub</a> or LinkedIn for collaborations or internships.
     </p>
   </section>
 
@@ -40,49 +56,103 @@
 
     <div class="project-card">
       <h3>Smart Voting with Face Recognition</h3>
-      <p>Secure, contactless voting system with Python and OpenCV; includes Aadhaar-linked registration, CSV logging, and a Streamlit dashboard with TTS feedback.</p>
-      <a href="https://github.com/nanda3333/SMART_VOTING_USING_FACE_RECOGNITION" aria-label="View Smart Voting Project" style="color: #FFD700;" target="blank">View on GitHub</a>
+      <p>Secure, contactless voting system built with Python and OpenCV. Features Aadhaar-linked registration, duplicate-vote prevention, Streamlit/Tkinter front-ends, text-to-speech feedback, and secure vote logging.</p>
+      <a href="https://github.com/nanda3333/SMART_VOTING_USING_FACE_RECOGNITION" aria-label="View Smart Voting Project" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card">
-      <h3>ULTRON(Virtual Voice Assistant)</h3>
-      <p>Assistant with speech recognition, NLP, and OpenCV; supports real-time app and web actions via voice commands.</p>
-      <a href="https://github.com/nanda3333/ULTRON_VOICE_ASSISTANT" aria-label="ULTRON (Virtual Voice Assistant)" style="color: #FFD700;" target="blank">View on GitHub</a>
+      <h3>AES-Based Image Steganography System</h3>
+      <p>Combines AES encryption with LSB steganography to hide sensitive data inside images. Includes key/IV validation, image previews, and a Tkinter GUI for encryption/decryption and embed/extract operations.</p>
+      <a href="https://github.com/nanda3333" aria-label="View Steganography Project" target="_blank">View repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Offline Anti-Malware Scanner</h3>
+      <p>Offline malware detection using static-analysis heuristics: hashing (SHA-256), signature-style checks, rule-based alerts, directory scanning, and quarantine options — all runnable without internet access.</p>
+      <a href="https://github.com/nanda3333/malware_detection" aria-label="View Malware Detection Project" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Credit Path AI – Credit Risk Analysis</h3>
+      <p>End-to-end credit risk scoring pipeline: data cleaning, feature engineering, model training (classification), and evaluation using ROC-AUC and recall-focused metrics for imbalanced classes.</p>
+      <a href="https://github.com/nanda3333" aria-label="View Credit Risk Project" target="_blank">View repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Virtual Voice Assistant (ULTRON)</h3>
+      <p>Voice-driven assistant combining speech recognition, NLP, and automation to control system/apps and perform web actions. Includes custom intents and voice feedback.</p>
+      <a href="https://github.com/nanda3333/ULTRON_VOICE_ASSISTANT" aria-label="ULTRON (Virtual Voice Assistant)" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card">
       <h3>Employee Salary Prediction</h3>
-      <p>Models (KNN, Gradient Boosting) trained on the UCI Adult dataset; evaluated using classification reports and confusion matrix.</p>
-      <a href="https://github.com/nanda3333/EMPLOYEE_SALARY_PREDICTION" aria-label="View Salary Prediction Project" style="color: #FFD700;" target="blank">View on GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Malware Detection System</h3>
-      <p>Streamlit-based malware scanner using SHA-256 hashing and risk scoring with directory scanning and one-click malicious file removal.</p>
-      <a href="https://github.com/nanda3333/malware_detection" aria-label="View Malware Detection Project" style="color: #FFD700;" target="blank">View on GitHub</a>
+      <p>Trained KNN and Gradient Boosting models on the UCI Adult dataset to predict salary brackets. Evaluation performed using confusion matrices and classification reports.</p>
+      <a href="https://github.com/nanda3333/EMPLOYEE_SALARY_PREDICTION" aria-label="View Salary Prediction Project" target="_blank">View on GitHub</a>
     </div>
   </section>
 
   <section id="internships">
     <h2 style="color: #FFD700;">Internships</h2>
 
-    <div class="project-card">
-      <h3>Cloud Computing with DevOps — APSSDC</h3>
-      <p>Hands-on with virtualization, cloud deployment models, and CI/CD pipelines.</p>
+    <div class="internship-card">
+      <div class="internship-left">
+        <h3 style="color: #FFF;">Artificial Intelligence Intern — Infosys Springboard</h3>
+        <ul>
+          <li>Working on Automatic Number Plate Recognition (ANPR) and Automatic Traffic Control/Counting (ATCC).</li>
+          <li>Vehicle detection, license plate localization, OCR-based recognition, and dataset-driven model evaluation.</li>
+        </ul>
+      </div>
+      <div class="internship-right">
+        <span class="company">Infosys Springboard</span>
+        <span class="dates">Oct — Present</span>
+      </div>
     </div>
 
-    <div class="project-card">
-      <h3>Cybersecurity — Edunet Foundation</h3>
-      <p>Exposure to ethical hacking, network defense, and incident response.</p>
+    <div class="internship-card">
+      <div class="internship-left">
+        <h3 style="color: #FFF;">Artificial Intelligence Intern — Edunet Foundation</h3>
+        <ul>
+          <li>Implemented supervised and unsupervised ML workflows and small production-ready pipelines.</li>
+          <li>Worked on model training, validation, and result visualization for mini-projects.</li>
+        </ul>
+      </div>
+      <div class="internship-right">
+        <span class="company">Edunet Foundation</span>
+        <span class="dates">Jul — Aug</span>
+      </div>
     </div>
 
-    <div class="project-card">
-      <h3>Artificial Intelligence — Edunet Foundation</h3>
-      <p>Applied supervised and unsupervised ML algorithms in mini-projects.</p>
+    <div class="internship-card">
+      <div class="internship-left">
+        <h3 style="color: #FFF;">Cybersecurity Intern — Edunet Foundation</h3>
+        <ul>
+          <li>Hands-on exposure to ethical hacking basics, network defense strategies, and threat modeling.</li>
+          <li>Learned incident response steps and defensive toolkits.</li>
+        </ul>
+      </div>
+      <div class="internship-right">
+        <span class="company">Edunet Foundation</span>
+        <span class="dates">Jun — Jul</span>
+      </div>
     </div>
+
+    <div class="internship-card">
+      <div class="internship-left">
+        <h3 style="color: #FFF;">Cloud Computing with DevOps Intern — APSSDC</h3>
+        <ul>
+          <li>Exposure to virtualization, cloud deployments, containerization ideas, and CI/CD concepts.</li>
+          <li>Worked with basic pipelines and deployment demos for small services.</li>
+        </ul>
+      </div>
+      <div class="internship-right">
+        <span class="company">APSSDC</span>
+        <span class="dates">May — Jul</span>
+      </div>
+    </div>
+
   </section>
 
-  <section id="skills"style="color: #000;">
+  <section id="skills" style="color: #000;">
     <h2 style="color: #FFD700;">Skills</h2>
     <div class="skills-grid">
       <span>Python</span>
@@ -118,8 +188,8 @@
     <h2 style="color: #FFD700;">Contact</h2>
     <p>Email: nandavarunv@gmail.com</p>
     <p>Phone: +91 9493503758</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nanda-varun-gowd-veligatla-976a2528b/" target="blank" style="color: #00FFFF;">linkedin.com/in/nanda-varun-veligatla-976a2528b</a></p>
-    <p>GitHub: <a href="https://github.com/nanda3333" target="blank" style="color: #00FFFF;">github.com/nanda3333</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nanda-varun-gowd-veligatla-976a2528b/" target="_blank" style="color:#00FFFF;">linkedin.com/in/nanda-varun-veligatla-976a2528b</a></p>
+    <p>GitHub: <a href="https://github.com/nanda3333" target="_blank" style="color:#00FFFF;">github.com/nanda3333</a></p>
     <p>Location: Vissakoderu, Andhra Pradesh – 534244, India</p>
   </section>
 
